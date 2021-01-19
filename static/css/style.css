@@ -1,10 +1,11 @@
-
 /* 
     Created on : 16 Dec 2020, 1:57:39 PM
     Author     : Sandile
 */
 
+
 /* css variables/properties */
+
 :root {
     --primary-color: #047aed;
     --secondary-color: #1c3fa8;
@@ -14,40 +15,41 @@
     --error-color: #d9534f;
 }
 
-*{
-    box-sizing: border-box;                                                     /*Use this often: it allows to add padding without adding to the width of the element*/
+* {
+    box-sizing: border-box;
+    /*Use this often: it allows to add padding without adding to the width of the element*/
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     font-family: sans-serif;
     color: #333;
     line-height: 1.6;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: #333;
 }
 
-h1, h2{
+h1,
+h2 {
     font-weight: 300;
     line-height: 1.2;
     margin: 10px 0;
 }
 
-p{
+p {
     margin: 10px 0;
 }
 
-img{
+img {
     width: 100%;
-        
 }
 
 h4 {
@@ -56,17 +58,17 @@ h4 {
     margin: auto;
 }
 
-
 h4:hover {
     color: var(--primary-color);
-    
 }
 
-#headshot, #porfolio {
+#headshot,
+#porfolio {
     border-radius: 90%;
 }
 
-code, pre {
+code,
+pre {
     background-color: #333;
     color: #fff;
     padding: 10px;
@@ -75,65 +77,68 @@ code, pre {
 .at {
     font-size: 2.8em;
     font-weight: bold;
-    
 }
 
+
 /*Nav Bar Styling*/
-.navbar{
+
+.navbar {
     position: fixed;
-    background-color: var(--primary-color);                                     /*new thing learnt*/
+    background-color: var(--primary-color);
+    /*new thing learnt*/
     color: #fff;
     height: 70px;
     width: 100%;
 }
 
-.navbar ul{
+.navbar ul {
     display: flex;
-    
 }
 
-.navbar a{
+.navbar a {
     color: #fff;
     padding: 10px;
     margin: 0 5px;
-    
 }
 
-.navbar a:hover{                                                                /* Underline effect on hovering*/
+.navbar a:hover {
+    /* Underline effect on hovering*/
     border-bottom: 2px #fff solid;
 }
 
-.navbar .flex{
+.navbar .flex {
     justify-content: space-between;
 }
-
 
 .navbar .container .logo {
     font-weight: bold;
     animation: slideInFromTop 0.5s ease-in;
 }
 
+
 /* Showcase */
-.showcase{
+
+.showcase {
     height: 400px;
-    background-color: var(--primary-color);                                     /* new thing learnt */
+    background-color: var(--primary-color);
+    /* new thing learnt */
     color: #fff;
     position: relative;
 }
 
-.showcase h1{
+.showcase h1 {
     font-size: 40px
 }
 
-.showcase p{
+.showcase p {
     margin: 20px 0;
 }
 
-.showcase .grid{
+.showcase .grid {
     overflow: visible;
-    grid-template-columns: 55%;                                                 /* 55%: paragraph part, 45%: form part*/
+    grid-template-columns: 55%;
+    /* 55%: paragraph part, 45%: form part*/
     gap: 30px;
-    
 }
 
 .showcase-text {
@@ -162,7 +167,8 @@ code, pre {
 }
 
 .showcase-form input[type="text"],
-.showcase-form input[type="email"] {                                            /*new thing*/
+.showcase-form input[type="email"] {
+    /*new thing*/
     border: 0;
     border-bottom: 1px solid #b4becb;
     width: 100%;
@@ -174,7 +180,9 @@ code, pre {
     outline: none;
 }
 
-.showcase::before, .showcase::after {                                           /* Adding the slant: another new thing */
+.showcase::before,
+.showcase::after {
+    /* Adding the slant: another new thing */
     content: "";
     position: absolute;
     height: 100px;
@@ -188,7 +196,9 @@ code, pre {
     -ms-transform: skewY(-3deg);
 }
 
+
 /* Stats */
+
 .stats {
     padding-top: 100px;
     animation: slideInFromBottom 1.1s ease-in;
@@ -210,8 +220,8 @@ code, pre {
 }
 
 
-
 /* Cli */
+
 .cli .grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -219,11 +229,13 @@ code, pre {
 
 .image {
     border-radius: 10px;
-    box-shadow: 10px  rgba(0, 100, 0, 1.2);
+    box-shadow: 10px rgba(0, 100, 0, 1.2);
 }
 
-.cli .grid > *:first-child {                                                    /* Whatever the first child is of .cli .grid */
-    grid-column: 1 / span 2;                                                    /* */
+.cli .grid>*:first-child {
+    /* Whatever the first child is of .cli .grid */
+    grid-column: 1 / span 2;
+    /* */
     grid-row: 1 / span 2;
 }
 
@@ -231,12 +243,16 @@ code, pre {
     font-weight: normal;
 }
 
+
 /* Cloud Section */
+
 .cloud .grid {
     grid-template-columns: 4fr 3fr;
 }
 
+
 /* Languages */
+
 .languages .flex {
     flex-wrap: wrap;
 }
@@ -256,8 +272,11 @@ code, pre {
     transform: translateY(-15px)
 }
 
+
 /* Features */
-.features-head img, .docs-head img {
+
+.features-head img,
+.docs-head img {
     width: 200px;
     justify-self: flex-end;
 }
@@ -267,7 +286,7 @@ code, pre {
     justify-self: flex-end;
 }
 
-.features-main .card > i{
+.features-main .card>i {
     margin-right: 20px
 }
 
@@ -275,15 +294,17 @@ code, pre {
     padding: 30px;
 }
 
-.features-main .grid > *:first-child {
+.features-main .grid>*:first-child {
     grid-column: 1 / span 3;
 }
 
-.features-main .grid > *:nth-child(2) {
+.features-main .grid>*:nth-child(2) {
     grid-column: 1 / span 2;
 }
 
+
 /* Docs */
+
 .docs-main h3 {
     margin: 20px 0;
 }
@@ -300,13 +321,14 @@ code, pre {
     align-items: flex-end;
 }
 
-.projects-main .grid {                                                          /* The columns of the projects page */
+.projects-main .grid {
+    /* The columns of the projects page */
     grid-template-columns: 1fr;
     align-items: flex-start;
 }
 
-
-.docs-main nav li {                                                             /* Projects Contact Me and CV card the first one */
+.docs-main nav li {
+    /* Projects Contact Me and CV card the first one */
     font-size: 18px;
     padding-bottom: 5px;
     margin-bottom: 5px;
@@ -315,17 +337,16 @@ code, pre {
 
 .docs-main nav li:hover {
     border-bottom: #ccc solid;
-    
 }
-
-
 
 .docs-head .container img:hover {
     border-radius: 110px;
     z-index: 1;
 }
 
+
 /* Navbar of Docs */
+
 .navbar .container ul {
     animation: slideInFromTop 0.7s ease-in;
 }
@@ -338,21 +359,22 @@ section {
     margin-top: 0;
     animation: slideInFromBottom 0.7s ease-in;
 }
+
 .card a:hover {
     color: var(--primary-color);
     font-weight: bolder;
 }
 
+
 /*Projects HTML*/
-.docs-head .container h1 {
-    
-}
 
 .docs-head {
     margin-top: -1%;
 }
 
+
 /* Footer */
+
 .footer .social a {
     margin: 0 15px;
 }
@@ -361,7 +383,9 @@ section {
     font-size: 150%;
 }
 
+
 /* Potfolio Styles */
+
 .card ul img {
     width: 35%;
     padding-top: 5px;
@@ -393,13 +417,12 @@ section {
 }
 
 
-
 /* Animation */
+
 @keyframes slideInFromLeft {
     0% {
         transform: translateX(-100%);
     }
-    
     100% {
         transform: translateX(0);
     }
@@ -409,7 +432,6 @@ section {
     0% {
         transform: translateX(100%);
     }
-    
     100% {
         transform: translateX(0);
     }
@@ -419,7 +441,6 @@ section {
     0% {
         transform: translateY(-100%);
     }
-    
     100% {
         transform: translateY(0);
     }
@@ -429,140 +450,126 @@ section {
     0% {
         transform: translateY(100%);
     }
-    
     100% {
         transform: translateY(0);
     }
 }
 
-/* Tablet and Under */
-@media(max-width: 2160px) {                                                     /* Here we want everything stacked for better UX */
-    .grid, .showcase .grid,
-    .stats .grid, .cli .grid,
-    .cloud .grid, features-main .grid,
+
+/* Media Queries */
+
+@media(max-width: 2160px) {
+    /* Here we want everything stacked for better UX */
+    .grid,
+    .showcase .grid,
+    .stats .grid,
+    .cli .grid,
+    .cloud .grid,
+    features-main .grid,
     docs-main .grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
-    
     .navbar {
         margin-bottom: -1px;
     }
     .showcase {
         height: auto;
     }
-    
     .showcase-text {
         text-align: center;
         margin-top: 40px;
         animation: slideInFromBottom 0.7s ease-in;
     }
-    
     .showcase-form {
         justify-self: center;
         margin: auto;
         animation: slideInFromBottom 1s ease-in;
     }
-    
-    .cli .grid > *:first-child {                                                /* Whatever the first child is of .cli .grid */
+    .cli .grid>*:first-child {
+        /* Whatever the first child is of .cli .grid */
         grid-column: 1;
         grid-row: 1;
     }
-    
-    .features-head, features-sub-head,
+    .features-head,
+    features-sub-head,
     .docs-head {
         text-align: center;
     }
-    
-    .features-head img, features-sub-head img,
+    .features-head img,
+    features-sub-head img,
     .docs-head img {
         justify-self: center;
         margin-top: -50px;
     }
-    
-    .features-main .grid > *:first-child,
-    .features-main .grid > *:nth-child(2) {
+    .features-main .grid>*:first-child,
+    .features-main .grid>*:nth-child(2) {
         grid-column: 1;
     }
-    
-    
 }
 
+
 /* Mobile */
+
 @media(max-width: 540px) {
     .logo {
         text-align: center;
         font-size: 180%;
         height: 20px;
     }
-    
     .navbar {
         height: 110px;
         margin-bottom: -1px;
         padding-bottom: 10px;
     }
-    
     .navbar .flex {
         flex-direction: column;
     }
-    
     .navbar ul {
         padding: 10px;
         background-color: rgba(10, 0, 0, 0.1);
         border-radius: 10px
     }
-    
-    .languages {                                                                /*the contacts on the cantact me page*/
+    .languages {
+        /*the contacts on the cantact me page*/
         width: 250px;
-        
-        
     }
-    
-    .docs-main .grid > *:first-child,
-    .docs-main .grid > *:nth-child(2) {
+    .docs-main .grid>*:first-child,
+    .docs-main .grid>*:nth-child(2) {
         grid-column: 1;
     }
-    
     .docs-main .grid {
         grid-template-columns: 1fr;
         justify-content: center;
     }
-    
     .footer .social a {
         margin: 0 10px;
     }
-    
     .social {
         margin: auto;
     }
-    
     footer h1 {
-    font-size: 6px;
+        font-size: 6px;
     }
-    
     .card ul img {
         width: 77%;
         border-radius: 20px;
     }
-    
     #pixelArt {
         width: 57%;
         border-radius: 2px;
     }
-    
     .showcase-form {
         position: absolute;
         top: 60px;
         height: 350px;
         width: 280px;
         padding: 40px;
-        z-index: 100;
         animation: slideInFromRight 1.2s ease-in;
     }
-    
 }
 
-@media(max-width: 325px){
+@media(max-width: 325px) {
     .logo {
         height: 20px;
     }
@@ -570,8 +577,7 @@ section {
         height: 135px;
         padding-top: 10px
     }
-    
     footer h1 {
-    font-size: 70%;
+        font-size: 70%;
     }
 }
