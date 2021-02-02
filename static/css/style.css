@@ -332,7 +332,7 @@ pre {
     font-size: 18px;
     padding-bottom: 5px;
     margin-bottom: 5px;
-    transition: transform 1.2s ease-in;
+    /*transition: transform 1.2s ease-in;*/
 }
 
 .docs-main nav li:hover {
@@ -448,7 +448,7 @@ section {
 
 @keyframes slideInFromBottom {
     0% {
-        transform: translateY(100%);
+        transform: translateY(0%);
     }
     100% {
         transform: translateY(0);
@@ -479,12 +479,12 @@ section {
     .showcase-text {
         text-align: center;
         margin-top: 40px;
-        animation: slideInFromBottom 0.7s ease-in;
+        /*animation: slideInFromBottom 0.7s ease-in;*/
     }
     .showcase-form {
         justify-self: center;
         margin: auto;
-        animation: slideInFromBottom 1s ease-in;
+        /*animation: slideInFromBottom 1s ease-in;*/
     }
     .cli .grid>*:first-child {
         /* Whatever the first child is of .cli .grid */
