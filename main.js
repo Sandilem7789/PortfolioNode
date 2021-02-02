@@ -29,33 +29,6 @@ app.get("/contacts.html", (request, response) => { //getting the contacts file
     response.sendFile(path.join(__dirname, "static", "contacts.html"));
 });
 
-/*The Game Project */
-app.get("/game/game.html", (request, response) => { //getting the contacts file
-    response.sendFile(path.join(__dirname, "static/game/", "game.html"));
-});
-
-app.get("/game/game.js", (request, response) => { //getting the contacts file
-    response.sendFile(path.join(__dirname, "static/game/", "game.js"));
-});
-
-app.get("/game/levels.js", (request, response) => { //getting the contacts file
-    response.sendFile(path.join(__dirname, "static/game/", "levels.js"));
-});
-
-app.get("/game/style.css", (request, response) => { //getting the contacts file
-    response.sendFile(path.join(__dirname, "static/game/", "style.css"));
-});
-
-app.get("/game/img/player.png", (request, response) => { //getting the contacts file
-    response.sendFile(path.join(__dirname, "static/game/img/", "player.png"));
-});
-
-app.get("/game/img/sprites.png", (request, response) => { //getting the contacts file
-    response.sendFile(path.join(__dirname, "static/game/img/", "sprites.png"));
-});
-
-
-
 /* CSS */
 app.get("/css/style.css", (request, response) => {
     response.sendFile(path.join(__dirname, "static/css/", "style.css")); //when index is looking for this css, this line looks on static/css/style.css
@@ -112,6 +85,66 @@ app.get("/img/s2.png", (request, response) => {
 
 app.get("/img/calc.png", (request, response) => {
     response.sendFile(path.join(__dirname, "static/img/", "calc.png")); //calculator image
+});
+
+/***********************************************************************************/
+
+
+/*The Game Project */
+app.get("/game/game.html", (request, response) => { //getting the contacts file
+    response.sendFile(path.join(__dirname, "static/game/", "game.html"));
+});
+
+app.get("/game/game.js", (request, response) => { //getting the contacts file
+    response.sendFile(path.join(__dirname, "static/game/", "game.js"));
+});
+
+app.get("/game/levels.js", (request, response) => { //getting the contacts file
+    response.sendFile(path.join(__dirname, "static/game/", "levels.js"));
+});
+
+app.get("/game/style.css", (request, response) => { //getting the contacts file
+    response.sendFile(path.join(__dirname, "static/game/", "style.css"));
+});
+
+app.get("/game/img/player.png", (request, response) => { //getting the contacts file
+    response.sendFile(path.join(__dirname, "static/game/img/", "player.png"));
+});
+
+app.get("/game/img/sprites.png", (request, response) => { //getting the contacts file
+    response.sendFile(path.join(__dirname, "static/game/img/", "sprites.png"));
+});
+
+
+
+/* The 3D card project */
+app.get("/3Dcard/3d.html", (request, response) => { //getting the contacts file
+    response.sendFile(path.join(__dirname, "static/3Dcard/", "3d.html"));
+});
+
+app.get("/3Dcard/adidas.png", (request, response) => { //getting the contacts file
+    response.sendFile(path.join(__dirname, "static/3Dcard/", "adidas.png"));
+});
+
+app.get("/3Dcard/card.js", (request, response) => { //getting the contacts file
+    response.sendFile(path.join(__dirname, "static/3Dcard/", "card.js"));
+});
+
+app.get("/3Dcard/style.css", (request, response) => { //getting the contacts file
+    response.sendFile(path.join(__dirname, "static/3Dcard/", "style.css"));
+});
+
+/*Pixel Art Editor*/
+app.get("/PixelEditor/pixelDrawer.html", (request, response) => { //getting the contacts file
+    response.sendFile(path.join(__dirname, "static/PixelEditor/", "pixelDrawer.html"));
+});
+
+app.get("/PixelEditor/pixelEditor.js", (request, response) => { //getting the contacts file
+    response.sendFile(path.join(__dirname, "static/PixelEditor/", "pixelEditor.js"));
+});
+
+app.get("/PixelEditor/style.css", (request, response) => { //getting the contacts file
+    response.sendFile(path.join(__dirname, "static/PixelEditor/", "style.css"));
 });
 
 app.listen(8000);
