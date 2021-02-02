@@ -29,6 +29,33 @@ app.get("/contacts.html", (request, response) => { //getting the contacts file
     response.sendFile(path.join(__dirname, "static", "contacts.html"));
 });
 
+/*The Game Project */
+app.get("/game/game.html", (request, response) => { //getting the contacts file
+    response.sendFile(path.join(__dirname, "static/game/", "game.html"));
+});
+
+app.get("/game/game.js", (request, response) => { //getting the contacts file
+    response.sendFile(path.join(__dirname, "static/game/", "game.js"));
+});
+
+app.get("/game/levels.js", (request, response) => { //getting the contacts file
+    response.sendFile(path.join(__dirname, "static/game/", "levels.js"));
+});
+
+app.get("/game/style.css", (request, response) => { //getting the contacts file
+    response.sendFile(path.join(__dirname, "static/game/", "style.css"));
+});
+
+app.get("/game/img/player.png", (request, response) => { //getting the contacts file
+    response.sendFile(path.join(__dirname, "static/game/img/", "player.png"));
+});
+
+app.get("/game/img/sprites.png", (request, response) => { //getting the contacts file
+    response.sendFile(path.join(__dirname, "static/game/img/", "sprites.png"));
+});
+
+
+
 /* CSS */
 app.get("/css/style.css", (request, response) => {
     response.sendFile(path.join(__dirname, "static/css/", "style.css")); //when index is looking for this css, this line looks on static/css/style.css
