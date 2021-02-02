@@ -39,7 +39,7 @@ app.get("/css/all.css", (request, response) => {
 });
 
 app.get("/css/utilities.css", (request, response) => {
-    response.sendFile(path.join(__dirname, "static/css/", "utilities.css")); //when index is looking for this css, this line looks on static/css/style.css
+    response.sendFile(path.join(__dirname, "static/css/", "utilities.css")); //when  index is looking for this css, this line looks on static/css/style.css
 });
 
 app.get("/css/text.css", (request, response) => {
